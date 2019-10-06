@@ -1,0 +1,117 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.u-shadow {
+    text-shadow: 4px 4px 0 #6fd1bd;
+    transition: text-shadow 0.2s ease-in-out;
+}
+
+a:hover .u-shadow {
+    text-shadow: -4px -4px 0 salmon;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.6rem;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.008em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+}
+
+a {
+    color: #333;
+}
+
+.Title {
+    font-size: 50px;
+    font-size: 8vw;
+    font-family: Latp, 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+
+@media (max-width: 525px){
+    .Title {
+        font-size: 42px;
+    }
+}
+
+@media (min-width: 937.5px){
+    .Title {
+        font-size: 75px;
+    }
+}
+
+.Title-sub {
+    font-size: 0.34em;
+    letter-spacing: 0.16em;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+    margin-top: 1.2rem;
+    padding-top: 1.6rem;
+    border-top: 0.45em solid;
+}
+
+.l-Wrapper {
+    width: 80%;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .l-Wrapper--reset\@sm-down {
+    width: 100%;
+  }
+}
+
+.l-Header {
+    margin-top: 6.4rem;
+    margin-bottom: 3.2rem;
+}
+
+.l-Header-col {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 544px) {
+  .l-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .l-Header-col:last-child:not(:first-child) {
+    text-align: right;
+  }
+}
